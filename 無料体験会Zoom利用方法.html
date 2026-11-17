@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>無料体験会Zoom利用方法</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#EAF8FA;--card:#fff;--text:#2b3a3d;--sub:#5f7378;--line:#cdebf0;--teal:#60C7D5;--teal-d:#23808f;--teal-s:#D6F1F5;--on-teal:#0b4a54;--coral:#F77261;--coral-s:#FEE4DF;--shadow:0 6px 18px rgba(96,199,213,.2)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#112326;--card:#1b3236;--text:#e8f6f8;--sub:#9fbcc2;--line:#2c4a50;--teal-d:#7ad8e4;--teal-s:#1f3d42;--coral:#ff8f7e;--coral-s:#4a2a26;--shadow:none}}
+:root[data-theme="dark"]{--bg:#112326;--card:#1b3236;--text:#e8f6f8;--sub:#9fbcc2;--line:#2c4a50;--teal-d:#7ad8e4;--teal-s:#1f3d42;--coral:#ff8f7e;--coral-s:#4a2a26;--shadow:none}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.85;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:680px;margin:0 auto;padding:28px 16px 80px}
+.hero{background:var(--card);border-radius:28px;padding:32px 22px 28px;text-align:center;box-shadow:var(--shadow);border-top:8px solid var(--teal)}
+.hero .big{font-size:3rem;display:inline-block;animation:float 3s ease-in-out infinite}
+.hero h1{font-size:1.65rem;line-height:1.45;margin:8px 0 6px}
+.hero p{margin:0;color:var(--sub);font-size:.95rem}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.intro{margin:22px 4px 0}
+.intro p{margin:0 0 10px}
+.wifi{background:var(--teal-s);border-radius:16px;padding:12px 16px;font-size:.92rem;margin-top:14px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 0}
+.nav a{flex:1 1 120px;text-align:center;text-decoration:none;background:var(--card);color:var(--teal-d);border:2px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:700;font-size:.9rem;transition:transform .15s,border-color .15s}
+.nav a:hover,.nav a:active{transform:translateY(-2px);border-color:var(--teal)}
+h2{font-size:1.35rem;margin:46px 0 16px;padding-left:14px;border-left:6px solid var(--teal)}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px 18px 16px;margin:0 0 14px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 6px;font-size:1.05rem;display:flex;gap:10px;align-items:center}
+.num{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--teal);color:var(--on-teal);font-weight:800;font-size:.95rem}
+.card p{margin:6px 0 0}
+.note{font-size:.88rem;color:var(--sub)}
+.apps{display:grid;gap:10px;margin:14px 0 4px}
+@media (min-width:560px){.apps{grid-template-columns:1fr 1fr}}
+.app{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;background:var(--teal-s);border-radius:18px;padding:12px 14px;transition:transform .15s}
+.app:hover,.app:active{transform:scale(1.03)}
+.app .ic{flex:none;width:48px;height:48px;border-radius:14px;background:var(--teal);color:var(--on-teal);display:grid;place-items:center;font-weight:800;font-size:.8rem}
+.app b{display:block;line-height:1.4;font-size:.95rem}
+.app small{color:var(--sub);font-size:.78rem}
+.chip{background:var(--teal-s);color:var(--teal-d);padding:2px 10px;border-radius:999px;font-weight:700;font-size:.88em;white-space:nowrap}
+.sub{margin:10px 0 0;padding:10px 12px;background:var(--teal-s);border-radius:14px;font-size:.92rem}
+.warn{display:flex;gap:12px;background:var(--coral-s);border-left:6px solid var(--coral);border-radius:22px;padding:16px 18px;margin-top:20px;font-weight:700;font-size:.93rem}
+.warn .ph{font-size:1.6rem;animation:ring 2.4s ease-in-out infinite;transform-origin:50% 60%}
+.tel{display:inline-block;margin-top:6px;background:var(--card);color:var(--text);border-radius:999px;padding:4px 16px;text-decoration:none;font-size:1.05rem}
+@keyframes ring{0%,60%,100%{transform:rotate(0)}65%{transform:rotate(-14deg)}75%{transform:rotate(14deg)}85%{transform:rotate(-10deg)}95%{transform:rotate(8deg)}}
+details{margin-top:40px;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:6px 18px;box-shadow:var(--shadow)}
+summary{cursor:pointer;font-weight:800;font-size:1.05rem;padding:12px 0;list-style:none;display:flex;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";margin-left:auto;color:var(--teal-d);font-size:1.3rem;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details ul{margin:0;padding:0 0 12px;list-style:none}
+details li{padding:8px 0 8px 1.6rem;position:relative;border-top:1px dashed var(--line)}
+details li::before{content:"";position:absolute;left:4px;top:1.15rem;width:9px;height:9px;border-radius:50%;background:var(--teal)}
+.pop{animation:pop .6s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--teal-d);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero pop">
+    <span class="big" aria-hidden="true">💻</span>
+    <h1>無料体験会<br>Zoom利用方法</h1>
+    <p>オンライン無料体験会ご準備のお願い</p>
+  </header>
+
+  <section class="intro">
+    <p>この度はABCashの無料体験会にお申し込みいただきありがとうございます。<br>事前準備と、当日の流れを端末別にご案内します。</p>
+    <div class="wifi">安定した通信品質のため、<b>Wi-Fi環境での接続</b>がおすすめです。</div>
+  </section>
+
+  <nav class="nav" aria-label="ページ内リンク">
+    <a href="#prep">事前準備</a>
+    <a href="#day">当日の受講方法</a>
+    <a href="#trouble">繋がらない時</a>
+  </nav>
+
+  <h2 id="prep">事前準備</h2>
+
+  <div class="card pop">
+    <h3><span class="num">1</span>Zoomアプリをダウンロード</h3>
+    <p>iPhone・Androidでご参加の方は、下のボタンから事前にダウンロードをお願いします。</p>
+    <div class="apps">
+      <a class="app" href="https://apps.apple.com/us/app/zoom-one-platform-to-connect/id546505307" target="_blank" rel="noopener"><span class="ic">zoom</span><span><b>iPhoneの方</b><small>App Storeを開く</small></span></a>
+      <a class="app" href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings" target="_blank" rel="noopener"><span class="ic">zoom</span><span><b>Androidの方</b><small>Google Playを開く</small></span></a>
+    </div>
+    <p class="note">パソコンでご参加の方はダウンロード不要です。<br>※すでにお持ちの方は、最新版にアップデートされているかご確認ください。</p>
+  </div>
+
+  <div class="card pop d1">
+    <h3><span class="num">2</span>端末を最新の状態に</h3>
+    <p>ご利用の端末のアップデートをお願いします。</p>
+  </div>
+
+  <div class="card pop d2">
+    <h3><span class="num">3</span>カメラ・マイクを許可</h3>
+    <p>端末の設定から、Zoomのカメラとマイクの使用を許可してください。</p>
+  </div>
+
+  <h2 id="day">体験会当日の受講方法</h2>
+
+  <div class="card pop">
+    <h3><span class="num">1</span>メールを確認</h3>
+    <p>support@abcash.co.jp からZoom情報のメールが届きます。</p>
+    <p class="note">体験会前日19時、または当日に配信されます。</p>
+  </div>
+
+  <div class="card pop d1">
+    <h3><span class="num">2</span>時間になったら入室</h3>
+    <p>ご予約のお時間になったら、メール内の <span class="chip">Zoomへの入室はこちら</span> ボタンをタップ(クリック)してください。</p>
+  </div>
+
+  <div class="card pop d2">
+    <h3><span class="num">3</span>Zoomを開く</h3>
+    <p><span class="chip">体験会のZoomを開く</span> をタップ(クリック)してZoomにアクセスしてください。</p>
+    <div class="sub">URLから入れない場合は、Zoomアプリの <span class="chip">ミーティングに参加</span> を押して、メールに書かれた<b>IDとパスワード</b>を入力してください。</div>
+  </div>
+
+  <div class="card pop d3">
+    <h3><span class="num">4</span>カウンセラーを待つ</h3>
+    <p>担当カウンセラーが体験会を始めるまで、そのままお待ちください。</p>
+  </div>
+
+  <div class="warn">
+    <span class="ph" aria-hidden="true">📞</span>
+    <div>開始時刻を5分過ぎても担当者とZoomまたはお電話がつながらない場合は、運営事務局までご連絡ください。<br><a class="tel" href="tel:0368227240">03-6822-7240</a></div>
+  </div>
+
+  <details id="trouble">
+    <summary>マイク・カメラが繋がらない場合</summary>
+    <ul>
+      <li>Zoomアプリが最新の状態か確認する</li>
+      <li>端末の設定で、Zoomへのカメラ・マイクが許可されているか確認する</li>
+      <li>他のアプリがカメラ・マイクを使っていたら終了する</li>
+      <li>それでも直らなければ、Zoomアプリや端末を再起動する</li>
+    </ul>
+  </details>
+</main>
+</body>
+</html>
